@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from "next/image";
 import {
     BsFillMoonStarsFill
 } from "react-icons/bs";
@@ -7,6 +8,7 @@ import {
     AiFillLinkedin,
     AiFillYoutube,
 } from "react-icons/ai";
+import deved from '../public/deved.png'
 
 export default function Home() {
   return (
@@ -41,6 +43,9 @@ export default function Home() {
                 <AiFillTwitterCircle />
                 <AiFillLinkedin />
                 <AiFillYoutube />
+            </div>
+            <div className="mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden mt-20">
+                <Image src={deved} alt="developer" layout="fill" objectFit="cover" />
             </div>
         </section>
       </main>
