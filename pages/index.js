@@ -1,5 +1,12 @@
 import Head from 'next/head'
-import { BsFillMoonStarsFill } from "react-icons/all";
+import {
+    BsFillMoonStarsFill
+} from "react-icons/bs";
+import {
+    AiFillTwitterCircle,
+    AiFillLinkedin,
+    AiFillYoutube,
+} from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -23,6 +30,18 @@ export default function Home() {
                     </li>
                 </ul>
             </nav>
+            <div className="text-center p-10">
+                <h2 className="text-5xl py-2 text-teal-600 font-medium">Sungur Atay</h2>
+                <h3 className="text-2xl py-2">Developer and designer</h3>
+                <p className="text-md py-5 leading-8 text-gray-800">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut, earum eius eos eum ex incidunt ipsum iure modi molestias natus placeat quae ratione repellendus rerum similique veniam vitae.
+                </p>
+            </div>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+                <AiFillTwitterCircle />
+                <AiFillLinkedin />
+                <AiFillYoutube />
+            </div>
         </section>
       </main>
     </div>
