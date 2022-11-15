@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from "next/image";
+
 import {
     BsFillMoonStarsFill
 } from "react-icons/bs";
@@ -8,7 +9,11 @@ import {
     AiFillLinkedin,
     AiFillYoutube,
 } from "react-icons/ai";
+
 import deved from '../public/deved.png'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 
 export default function Home() {
   return (
@@ -46,6 +51,30 @@ export default function Home() {
             </div>
             <div className="mx-auto relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden mt-20">
                 <Image src={deved} alt="developer" layout="fill" objectFit="cover" />
+            </div>
+        </section>
+        <section className="mt-10">
+            <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-80">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est minima nihil officia. Aperiam deleniti distinctio fugit hic incidunt iste labore nemo nobis praesentium quaerat? Facilis laboriosam officia officiis quo!
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-80">
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut est minima nihil officia.</span>
+            </p>
+            <div>
+                <div className="flex flex-col items-center shadow-lg p-10 rounded-xl my-10">
+                    <Image src={design} width={100} height={100} />
+                    <h3 className="text-lg font-medium pt-8 pb-2">
+                        Beautiful Designs
+                    </h3>
+                    <p className="py-2">
+                        Creating elegant designs suited for your needs following core design theory.
+                    </p>
+                    <h4 className="py-4 text-teal-600">Design tools I use</h4>
+                    <p className="text-gray-800 py-1">Photoshop</p>
+                    <p className="text-gray-800 py-1">Illustrator</p>
+                    <p className="text-gray-800 py-1">Figma</p>
+                </div>
             </div>
         </section>
       </main>
