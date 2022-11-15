@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Service({img}){
     return(
-        <div className="flex flex-col items-center shadow-lg p-10 rounded-xl my-10">
+        <div className="flex flex-col items-center shadow-lg p-10 rounded-xl my-10 dark:bg-white ">
             <Image src={img} width={100} height={100} />
             <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
